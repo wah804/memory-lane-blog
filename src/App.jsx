@@ -1,11 +1,11 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import Post from './pages/Post';
 import './index.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/memory-lane-blog">
       <div className="app-wrapper">
         <nav className="navbar">
           <div className="nav-content">
